@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "IoT Workshop Mobile",
+    "slug": "iot-workshop-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.iotworkshop.mobile"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.iotworkshop.mobile"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "scheme": "iot-workshop",
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "name": "iot-workshop-mobile",
+  "version": "1.0.0",
+  "private": true,
+  "main": "expo-router/entry",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests",
+    "test:coverage": "jest --coverage --passWithNoTests"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.1.0",
+    "@react-navigation/native": "^7.0.6",
+    "@tanstack/react-query": "^5.62.2",
+    "axios": "^1.7.9",
+    "expo": "~54.0.0",
+    "expo-linking": "^8.0.8",
+    "expo-router": "~6.0.14",
+    "expo-status-bar": "~3.0.8",
+    "react": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-svg": "15.12.1",
+    "victory-native": "^37.3.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.0",
+    "@testing-library/react-native": "^12.8.1",
+    "@types/jest": "^29.5.14",
+    "@types/react": "~19.1.10",
+    "jest": "^29.7.0",
+    "jest-expo": "~54.0.0",
+    "typescript": "~5.9.2"
+  },
+  "jest": {
+    "preset": "jest-expo",
+    "testEnvironment": "node",
+    "testMatch": [
+      "**/__tests__/**/*.test.[jt]s?(x)"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native(-community)?)|expo(nent)?|@expo(nent)?/.*|@expo-google-fonts/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|react-native-svg|victory-native)"
+    ],
+    "collectCoverageFrom": [
+      "app/**/*.{js,jsx,ts,tsx}",
+      "!app/**/*.test.{js,jsx,ts,tsx}",
+      "!**/node_modules/**"
+    ]
+  }
+}
